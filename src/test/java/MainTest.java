@@ -8,17 +8,20 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 class FizzBuzzTest {
+    //private FizzBuzz fizzbuzz;
+    //    @BeforeEach
+    //    public void setUp(){
+    //        this.fizzbuzz=new FizzBuzz();
+    //    }
 
-    private String[] FizzBuzzArray = new String[]{"flew", "club", "flab"};
-    private String[] expectedFizzBuzzArray = new String[]{"Fizz", "Buzz", "FizzBuzz"};
+    private String[] FizzBuzzArray = new String[]{"flew", "club", "flab", null};
+    private String[] expectedFizzBuzzArray = new String[]{"Fizz", "Buzz", "FizzBuzz", ""};
 
 
     @Test
     public void fizzBuzzTest() {
         FizzBuzz fizzBuzz = new FizzBuzz();
-            assertArrayEquals(expectedFizzBuzzArray,fizzBuzz.fizzBuzzStringArray(FizzBuzzArray));
+        assertArrayEquals(expectedFizzBuzzArray, fizzBuzz.fizzBuzzStringArray(FizzBuzzArray));
 
     }
 }
-
-
