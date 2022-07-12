@@ -2,7 +2,7 @@ public class FizzBuzz {
     public String fizzBuzzString(String str) {
 
         if (str == null) {
-            str="";
+            str = "";
         } else if ((str.startsWith("f")) && (str.endsWith("b"))) {
             str = "FizzBuzz";
         } else if (str.startsWith("f")) {
@@ -16,10 +16,11 @@ public class FizzBuzz {
     }
 
     public String[] fizzBuzzStringArray(String[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = fizzBuzzString(arr[i]);
+        String[] adjustedArray = arr;
+        for (int i = 0; i < adjustedArray.length; i++) {
+            arr[i] = fizzBuzzString(adjustedArray[i]);
 
         }
-        return arr;
+        return adjustedArray;
     }
 }
