@@ -14,14 +14,13 @@ class FizzBuzzTest {
     //        this.fizzbuzz=new FizzBuzz();
     //    }
 
-    private String[] FizzBuzzArray = new String[]{"flew", "club", "flab", null};
-    private String[] expectedFizzBuzzArray = new String[]{"Fizz", "Buzz", "FizzBuzz", ""};
+    private String[] FizzBuzzArray = new String[]{"flew", "club", "flab","clear", null};
+    private String[] expectedFizzBuzzArray = new String[]{"Fizz", "Buzz", "FizzBuzz","clear", ""};
 
 
     @Test
     public void fizzBuzzTest() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertArrayEquals(expectedFizzBuzzArray, fizzBuzz.fizzBuzzStringArray(FizzBuzzArray));
-
     }
 }
